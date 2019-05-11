@@ -1,14 +1,29 @@
 {
-  "name": "editor-core",
+  "name": "@ledecmf/editor-core",
   "version": "0.1.0",
-  "private": true,
+  "description": "Core files for the various LedeCMF post body editors.",
+  "author": {
+    "name": "Jamie Holly"
+  },
+  "repository": "https://github.com/LedeCMF/editor-core",
+  "bugs": "https://github.com/LedeCMF/editor-core/issues",
+  "keywords": [
+    "ledecmf",
+    "vue"
+  ],
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/editor-core.js",
+  "module": "./dist/editor-core.es.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rollup -c",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/svg": "^3.6.95",
     "core-js": "^2.6.5",
+    "popper.js": "^1.15.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -18,8 +33,18 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "rollup": "^1.11.3",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-eslint": "^5.0.0",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-svgo": "^1.0.2",
+    "rollup-plugin-vue": "^5.0.0",
+    "rollup-plugin-vue-inline-svg": "^1.0.1",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "svg-inline-loader": "^0.8.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
