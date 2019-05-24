@@ -20,25 +20,22 @@ import indent from '@mdi/svg/svg/format-indent-increase.svg'
 
 import merge from '@mdi/svg/svg/format-align-middle.svg'
 import clean from '@mdi/svg/svg/eraser-variant.svg'
-
+import trash from '@mdi/svg/svg/trash-can.svg'
 import image from '@mdi/svg/svg/image-outline.svg'
 import link from '@mdi/svg/svg/link-variant.svg'
 
 import close from '@mdi/svg/svg/close.svg'
 import check from '@mdi/svg/svg/check.svg'
+import add from '@mdi/svg/svg/plus-circle.svg'
 import hr from '@mdi/svg/svg/minus.svg'
 
-import table from '@mdi/svg/svg/table.svg'
-import column_before from '@mdi/svg/svg/table-column-plus-before.svg'
-import column_after from '@mdi/svg/svg/table-column-plus-after.svg'
-import column_remove from '@mdi/svg/svg/table-column-remove.svg'
-import column_merge from '@mdi/svg/svg/table-column-width.svg'
-import row_before from '@mdi/svg/svg/table-row-plus-before.svg'
-import row_after from '@mdi/svg/svg/table-row-plus-after.svg'
-import row_remove from '@mdi/svg/svg/table-row-remove.svg'
-import row_merge from '@mdi/svg/svg/table-row-height.svg'
 
-import trash from '@mdi/svg/svg/trash-can.svg'
+
+import select_up from '@mdi/svg/svg/select-drag.svg'
+import resize from '@mdi/svg/svg/resize.svg'
+import label from '@mdi/svg/svg/label.svg'
+import insert_above from '@mdi/svg/svg/arrow-expand-up.svg'
+import insert_below from '@mdi/svg/svg/arrow-expand-down.svg'
 
 const defaults = {
     bold,
@@ -64,16 +61,14 @@ const defaults = {
     close,
     check,
     hr,
-    table,
-    column_after,
-    column_before,
-    column_merge,
-    column_remove,
-    row_after,
-    row_before,
-    row_merge,
-    row_remove,
     trash,
+    select_up,
+    resize,
+    label,
+    add,
+    insert_above,
+    insert_below,
+
 }
 
 class Icons {

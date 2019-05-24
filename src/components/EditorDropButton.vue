@@ -5,7 +5,6 @@
         <div class="button-drop" v-if="opened" ref="drop">
             <div class="button-drop-inner">
                 <slot></slot>
-
             </div>
             <div class="drop-arrow" x-arrow></div>
         </div>
@@ -112,12 +111,15 @@
                 }
             }
 
-            &[x-placement="top"] [x-arrow] {
-                bottom: -10px;
+            &[x-placement="top"] {
 
-                border-right-color: transparent;
-                border-left-color: transparent;
-                border-bottom-color: transparent;
+                [x-arrow] {
+                    bottom: -10px;
+
+                    border-right-color: transparent;
+                    border-left-color: transparent;
+                    border-bottom-color: transparent;
+                }
             }
 
         }

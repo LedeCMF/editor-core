@@ -1,16 +1,23 @@
 <template>
     <div id="app">
-        <editor-icon v-for="icon in items" :icon="icon"></editor-icon>
+        <p  v-for="icon in items" :icon="icon" :key="icon">
+            <editor-icon :icon="icon" ></editor-icon> - {{ icon }}
+        </p>
+        <editor-button icon="table"></editor-button>
+        <editor-button icon="table" label="Insert table" :show-label="true"></editor-button>
+
     </div>
 </template>
 
 <script>
     import { EditorIcon } from './index'
     import { Icons} from './index'
+    import EditorButton from './components/EditorButton'
 
     export default {
         name: 'app',
         components: {
+            EditorButton,
             EditorIcon,
         },
 

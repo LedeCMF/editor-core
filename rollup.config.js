@@ -7,9 +7,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import svgo from 'rollup-plugin-svgo'
 
 const external = ['popper.js', 'vue', 'core-js']
-const extensions = ['.js', '.vue']
 const isProduction = !process.env.ROLLUP_WATCH
-const globals = {vue: 'Vue'}
 
 const plugins = [
     resolve(),
@@ -33,7 +31,8 @@ export default {
     output: [
         {
             format: 'cjs',
-            file: pkg['main']
+            file: pkg['main'],
+            exports: 'named',
         },
         {
             format: 'es',
