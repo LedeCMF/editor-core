@@ -1,7 +1,7 @@
 {
   "name": "@ledecmf/editor-core",
   "version": "0.1.5",
-  "description": "Core files for the various LedeCMF post body editors.",
+  "description": "Core files for the various LedeCMF post body editors. Provides some common components and icons.",
   "author": {
     "name": "Jamie Holly"
   },
